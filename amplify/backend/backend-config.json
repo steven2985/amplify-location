@@ -1,6 +1,6 @@
 {
   "auth": {
-    "maps9f4c4727": {
+    "maps6043b58d": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
