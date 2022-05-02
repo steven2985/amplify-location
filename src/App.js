@@ -11,8 +11,9 @@ import Amplify, { Auth } from 'aws-amplify';
 import { Signer } from "@aws-amplify/core";
 import Location from "aws-sdk/clients/location";
 import awsconfig from './aws-exports';
+Auth.configure(awsconfig);
 
-const mapName = "MyMapTest";
+const mapName = "NewMap";
 
 Amplify.configure(awsconfig);
 
@@ -99,7 +100,7 @@ const App = () => {
   const searchPlace = (place) => {
 
     const params = {
-      IndexName: "MyPlaceIndex",
+      IndexName: "NewMapIndex",
       Text: place,
     };
 
@@ -121,7 +122,7 @@ const App = () => {
   return (
     <div>
       <header>
-        <h1>FooBar Maps</h1>
+        <h1>NewMap</h1>
       </header>
        <div>
         <Search searchPlace = {searchPlace} /> 
