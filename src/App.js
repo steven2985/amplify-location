@@ -8,7 +8,7 @@ import ReactMapGL, {
 import "mapbox-gl/dist/mapbox-gl.css";
 
 import Amplify, { Auth } from 'aws-amplify';
-import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui';
+
 import { Signer } from "@aws-amplify/core";
 import Location from "aws-sdk/clients/location";
 import awsconfig from './aws-exports';
@@ -55,7 +55,7 @@ function Header(props) {
           <h1>NewMaps</h1>
         </div>
         <div className="col-2">
-          <AmplifySignOut />
+          
         </div>
       </div>
     </div>
@@ -212,7 +212,7 @@ const App = () => {
       )), [devPosMarkers]);
 
   return (
-    <AmplifyAuthenticator>
+    
     <div className="App">
       <Header/>
       <div>
@@ -254,7 +254,7 @@ const App = () => {
       )}
       </div>
     </div>
-    </AmplifyAuthenticator>
+    
   );
 }
 
